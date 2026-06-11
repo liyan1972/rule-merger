@@ -7,7 +7,7 @@
       type: file
       path: local/cloudflare.yaml"
       format: yaml
-      behavior: classical
+      behavior: domain
 
 - path: output/reject.mrs
   format: mrs
@@ -315,7 +315,7 @@
       type: file
       path: local/cloudflare.yaml"
       format: yaml
-      behavior: classical
+      behavior: domain
 
 - path: output/reject.yaml
   format: yaml
