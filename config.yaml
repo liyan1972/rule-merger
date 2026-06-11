@@ -4,10 +4,10 @@
   upstream:
 
     xndeye_reject:
-      type: http
-      url: "https://raw.githubusercontent.com/liyan1972/rule-merger/refs/heads/master/local/cloudflare.yaml"
+      type: file
+      path: local/cloudflare.yaml"
       format: yaml
-      behavior: domain
+      behavior: classical
 
 - path: output/reject.mrs
   format: mrs
