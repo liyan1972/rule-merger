@@ -5,8 +5,14 @@
 
     local_cloudflare:
       type: file
-      path: local/cloudflare.yaml"
+      path: local/cloudflare.yaml
       format: yaml
+      behavior: domain
+
+    cloudflare_reject:
+      type: http
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cloudflare.mrs"
+      format: mrs
       behavior: domain
 
 - path: output/reject.mrs
@@ -313,8 +319,14 @@
 
     local_cloudflare:
       type: file
-      path: local/cloudflare.yaml"
+      path: local/cloudflare.yaml
       format: yaml
+      behavior: domain
+
+    cloudflare_reject:
+      type: http
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cloudflare.mrs"
+      format: mrs
       behavior: domain
 
 - path: output/reject.yaml
