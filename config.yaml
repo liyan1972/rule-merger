@@ -306,6 +306,17 @@
       behavior: domain
 
 
+- path: output/cloudflare.yaml
+  format: yaml
+  behavior: domain
+  upstream:
+
+    xndeye_reject:
+      type: file
+      path: local/cloudflare.yaml"
+      format: yaml
+      behavior: classical
+
 - path: output/reject.yaml
   format: yaml
   behavior: classical
