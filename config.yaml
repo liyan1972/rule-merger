@@ -9,7 +9,7 @@
       format: yaml
       behavior: domain
 
-    cloudflare_reject:
+    cloudflare_domainset:
       type: http
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cloudflare.mrs"
       format: mrs
@@ -323,7 +323,7 @@
       format: yaml
       behavior: domain
 
-    cloudflare_reject:
+    cloudflare_domainset:
       type: http
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cloudflare.mrs"
       format: mrs
