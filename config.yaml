@@ -1,3 +1,14 @@
+- path: output/cloudflare.mrs
+  format: mrs
+  behavior: domain
+  upstream:
+
+    xndeye_reject:
+      type: http
+      url: "https://raw.githubusercontent.com/liyan1972/rule-merger/refs/heads/master/local/cloudflare.yaml"
+      format: yaml
+      behavior: domain
+
 - path: output/reject.mrs
   format: mrs
   behavior: domain
