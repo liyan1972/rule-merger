@@ -3,7 +3,7 @@
   behavior: domain
   upstream:
 
-    xndeye_reject:
+    local_cloudflare:
       type: file
       path: local/cloudflare.yaml"
       format: yaml
@@ -311,7 +311,7 @@
   behavior: domain
   upstream:
 
-    xndeye_reject:
+    local_cloudflare:
       type: file
       path: local/cloudflare.yaml"
       format: yaml
